@@ -1,10 +1,9 @@
+# Mongo DB
 db:
   image: mongo
   expose:
     - 27017
   command: --smallfiles
-  volumes_from:
-    - dbdata     
 # Python App
 web:
   build: . 
