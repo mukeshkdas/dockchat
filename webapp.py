@@ -21,7 +21,7 @@ def root():
     for index,message in enumerate(posts.find().sort('_id')):
       messages.append(message['message'])
       users.append(message['user'])
-    return render_template('form_action.html', users=users,messages=messages, message=posts.find().sort('_id')[N-1]['message'],hostname=socket.gethostname())
+    return render_template('form_action.html', users=users,messages=messages,hostname=socket.gethostname())
   else:
     return render_template('form_action.html', users=[],messages=[],hostname=socket.gethostname())
 
@@ -36,7 +36,7 @@ def chat():
   for index,message in enumerate(posts.find().sort('_id')):
       messages.append(message['message'])
       users.append(message['user'])
-  return render_template('form_action.html', users=users, messages=messages, message=posts.find().sort('_id')[N-1]['message'],hostname=socket.gethostname())
+  return render_template('form_action.html', users=users, messages=messages,hostname=socket.gethostname())
 
 
 if __name__ == '__main__':
