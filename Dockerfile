@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:latest
 MAINTAINER Nicola Kabar nicola@docker.com
 RUN apt-get update -y && \
     apt-get install -y python-pip \
