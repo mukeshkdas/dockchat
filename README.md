@@ -1,4 +1,4 @@
-##Dockchat
+###Dockchat
 Dockchat is a simple Python+Mongo app built to demonstrate various Docker features. 
 If you don't have docker-compose, install it with `pip install -U docker-compose`.
 

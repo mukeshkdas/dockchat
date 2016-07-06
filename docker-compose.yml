@@ -6,7 +6,7 @@ db:
   command: --smallfiles
 # Python App
 web:
-  build: . 
+  image: nicolaka/dockchat
   ports:
     - "5000:5000" 
   links:
